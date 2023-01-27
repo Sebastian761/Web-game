@@ -1,6 +1,216 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&display=swap');
+body, html{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/fondo.jpg) ;
+    background-repeat: no-repeat;
+}
+
+.title{
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
 .h2{
-    position: fixed;
-    background-color: aqua;
-    align-content: center;
-    font-family: Verdana, Tahoma, sans-serif;
+    min-width: 410px;
+}
+
+#seleccion_mascota{
+    background: steelblue;
+
+    border: 2px solid rgb(17, 63, 101);
+    border-radius: 1em;
+    margin-top: 7em;
+
+    position: relative;
+    left: 33%;
+    height: 70vh;
+    min-width: 300px;
+    width: 35vw;
+
+    opacity: .85;
+    
+}
+
+#seleccion_mascota{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1em;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.tarjetas{
+    margin: 2em;
+    display: flex;
+    gap: 1em;
+}
+
+label img{
+    width: 6em;
+    border-radius: 1em;
+}
+
+label{
+    text-align: center;
+    width: 10em;
+    height: 11em;
+    transition: border 1s;
+    border: 2px solid transparent;
+    border-radius: 2em;
+}
+
+label:hover{
+    border: 2px solid #FFF;
+}
+
+label:active{
+    background-color: rgb(17, 63, 101);
+}
+
+#boton-mascota{
+    background-color: transparent;
+    height: 3em;
+    width: 10em;
+    border: 2px solid rgb(4, 60, 79);
+    border-radius: 1.5em;
+    color: black;
+    font-weight: 700;
+    transition: all 1s;
+}
+
+#boton-mascota:hover{
+    background-color: rgb(17, 63, 101);
+    color: #FFF;
+}
+
+input:checked+label {
+    background-color: rgb(17, 63, 101);
+}
+
+#seleccion_ataque{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    font-size: .9em;
+    font-family: 'Press Start 2P', cursive;
+
+    margin-top: 7em;
+
+}
+
+#seleccion_ataque .botones{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.boton-ataque{
+    background-color: rgb(17, 63, 101);
+    color: #FFF;
+    width: 6vw;
+    height: 4vh;
+    border-radius: 1em;
+    border-color: rgb(73, 77 165);
+    transition: all 1s;
+    font-size: .8em;
+    font-family: 'Press Start 2P', cursive;
+
+    min-width: 100px;
+}
+
+.boton-ataque:hover{
+    border-color: #FFF;
+    box-shadow: 5px 5px 5px rgb(179, 182, 237);
+}
+
+#mensajes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(231, 232, 250);
+
+    height: 5em;
+    width: 20em;
+
+    margin: 2em;
+    border-radius: 1em;
+
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 10em 10em;
+    align-items: center;
+}
+
+#boton-reinicio{
+    color: #FFF;
+    background-color: rgb(30, 97, 152);
+    border-radius: 1em;
+    height: 4em;
+    width: 12em;
+    border-color: #FFF;
+    padding: 1em;
+    transition: all .5s;
+
+    font-size: .7em;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#boton-reinicio:hover{
+    background-color: rgb(39, 40, 55);
+}
+
+input{
+    display: none;
+}
+
+@media (max-width: 1500px) {
+
+    .title{
+        margin: 0;
+    }
+
+    #seleccion_mascota{
+        height: 85vh;
+    }
+
+    .tarjetas{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    label{
+        height: 7em;
+        padding: 1.5em;
+    }
+
+    label img{
+        width: 5em;
+    }
+
+    .rati{
+        margin-bottom: 1.5em;
+    }
+
+    .h2{
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    #seleccion_mascota{
+        left: 20%;
+    }
 }
