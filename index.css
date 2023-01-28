@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&display=swap');
+
 body, html{
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +21,7 @@ body{
     min-width: 410px;
 }
 
-#seleccion_mascota{
+#seleccionMascota{
     background: steelblue;
 
     border: 2px solid rgb(17, 63, 101);
@@ -37,7 +38,7 @@ body{
     
 }
 
-#seleccion_mascota{
+#seleccionMascota{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +76,7 @@ label:active{
     background-color: rgb(17, 63, 101);
 }
 
-#boton-mascota{
+#botonMascota{
     background-color: transparent;
     height: 3em;
     width: 10em;
@@ -86,7 +87,7 @@ label:active{
     transition: all 1s;
 }
 
-#boton-mascota:hover{
+#botonMascota:hover{
     background-color: rgb(17, 63, 101);
     color: #FFF;
 }
@@ -95,7 +96,7 @@ input:checked+label {
     background-color: rgb(17, 63, 101);
 }
 
-#seleccion_ataque{
+#seleccionAtaque{
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -107,13 +108,13 @@ input:checked+label {
 
 }
 
-#seleccion_ataque .botones{
+#seleccionAtaque .botones{
     display: flex;
     flex-direction: row;
     gap: 1em;
 }
 
-.boton-ataque{
+.botonAtaque{
     background-color: rgb(17, 63, 101);
     color: #FFF;
     width: 6vw;
@@ -127,7 +128,7 @@ input:checked+label {
     min-width: 100px;
 }
 
-.boton-ataque:hover{
+.botonAtaque:hover{
     border-color: #FFF;
     box-shadow: 5px 5px 5px rgb(179, 182, 237);
 }
@@ -153,7 +154,7 @@ input:checked+label {
     align-items: center;
 }
 
-#boton-reinicio{
+#botonReinicio{
     color: #FFF;
     background-color: rgb(30, 97, 152);
     border-radius: 1em;
@@ -167,7 +168,7 @@ input:checked+label {
     font-family: 'Press Start 2P', cursive;
 }
 
-#boton-reinicio:hover{
+#botonReinicio:hover{
     background-color: rgb(39, 40, 55);
 }
 
@@ -181,7 +182,7 @@ input{
         margin: 0;
     }
 
-    #seleccion_mascota{
+    #seleccionMascota{
         height: 85vh;
     }
 
@@ -210,7 +211,7 @@ input{
 }
 
 @media (max-width: 700px) {
-    #seleccion_mascota{
+    #seleccionMascota{
         left: 20%;
     }
 }
