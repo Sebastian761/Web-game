@@ -11,7 +11,7 @@ body{
     background-repeat: no-repeat;
 }
 
-.title{
+.titulo{
     font-size: 2.5em;
     font-weight: 600;
     font-family: 'Pokemon Solid', sans-serif;
@@ -21,7 +21,7 @@ body{
     min-width: 410px;
 }
 
-#seleccionMascota{
+#seleccionar-mascota{
     background: steelblue;
 
     border: 2px solid rgb(17, 63, 101);
@@ -38,7 +38,7 @@ body{
     
 }
 
-#seleccionMascota{
+#seleccionar-mascota{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,7 @@ label:active{
     background-color: rgb(17, 63, 101);
 }
 
-#botonMascota{
+#boton-mascota{
     background-color: transparent;
     height: 3em;
     width: 10em;
@@ -87,7 +87,7 @@ label:active{
     transition: all 1s;
 }
 
-#botonMascota:hover{
+#boton-mascota:hover{
     background-color: rgb(17, 63, 101);
     color: #FFF;
 }
@@ -96,7 +96,7 @@ input:checked+label {
     background-color: rgb(17, 63, 101);
 }
 
-#seleccionAtaque{
+#seleccionar-ataque{
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -108,13 +108,13 @@ input:checked+label {
 
 }
 
-#seleccionAtaque .botones{
+#seleccionar-ataque .botones{
     display: flex;
     flex-direction: row;
     gap: 1em;
 }
 
-.botonAtaque{
+.boton-de-ataque{
     background-color: rgb(17, 63, 101);
     color: #FFF;
     width: 6vw;
@@ -128,7 +128,7 @@ input:checked+label {
     min-width: 100px;
 }
 
-.botonAtaque:hover{
+.boton-de-ataque:hover{
     border-color: #FFF;
     box-shadow: 5px 5px 5px rgb(179, 182, 237);
 }
@@ -154,7 +154,7 @@ input:checked+label {
     align-items: center;
 }
 
-#botonReinicio{
+#boton-reiniciar{
     color: #FFF;
     background-color: rgb(30, 97, 152);
     border-radius: 1em;
@@ -168,7 +168,7 @@ input:checked+label {
     font-family: 'Press Start 2P', cursive;
 }
 
-#botonReinicio:hover{
+#boton-reiniciar:hover{
     background-color: rgb(39, 40, 55);
 }
 
@@ -182,7 +182,7 @@ input{
         margin: 0;
     }
 
-    #seleccionMascota{
+    #seleccionar-mascota{
         height: 85vh;
     }
 
@@ -211,7 +211,7 @@ input{
 }
 
 @media (max-width: 700px) {
-    #seleccionMascota{
+    #seleccionar-mascota{
         left: 20%;
     }
 }
