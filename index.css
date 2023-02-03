@@ -182,9 +182,24 @@ input{
     justify-content: center;
 }
 
-#mapa{
-    border: 1px solid #FFF;
+.subtitulo{
+    text-align: center;
 }
+
+#ver-mapa button{
+    width: 11em;
+    height: 2.5em;
+    border-radius: 1em;
+    background: transparent;
+    border: 2px solid #FFF;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 1em;
+}
+
+#ver-mapa button:active{
+    background-color: rgb(245, 95, 49);
+}
+
 
 @media (max-width: 1500px) {
 
@@ -223,5 +238,13 @@ input{
 @media (max-width: 700px) {
     #seleccionar-mascota{
         left: 20%;
+    }
+}
+
+@media (max-width: 470px) {
+    .botoncitos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
