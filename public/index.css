@@ -208,7 +208,8 @@ input{
     }
 
     #seleccionar-mascota{
-        height: 85vh;
+        height: 110vh;
+        margin-bottom: 3em;
     }
 
     .tarjetas{
@@ -237,7 +238,7 @@ input{
 
 @media (max-width: 700px) {
     #seleccionar-mascota{
-        left: 20%;
+        left: 13%;
     }
 }
 

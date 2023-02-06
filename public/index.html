@@ -22,11 +22,21 @@
         <section id="ver-mapa">
             <h2 class="titulo">Recorre el mapa junto a tu Mokepon</h2>
             <canvas id="mapa"></canvas>
-            <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+            <button 
+            ontouchend = "detenerMovimiento()" 
+            ontouchstart = "moverArriba()"
+            onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
             <div class="botoncitos">
-                <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
-                <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
-                <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+                <button
+                    ontouchend = "detenerMovimiento()" 
+                    ontouchstart = "moverIzquierda()" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+                <button
+                    ontouchend = "detenerMovimiento()" 
+                    ontouchstart = "moverAbajo()" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+                <button
+                    ontouchend = "detenerMovimiento()" 
+                    ontouchstart = "moverDerecha()"
+                    onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
                 
             </div>
             
@@ -62,6 +72,6 @@
                 </div>
             </div>
         </section>
-        <script src="./js/codigo.js"></script>
+        <script src="./codigo.js"></script>
     </body>
 </html>
